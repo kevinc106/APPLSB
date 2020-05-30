@@ -66,7 +66,7 @@ namespace LSB
                     Debug.Log("TIEMPO: "+mainText.text);
 		        }
 		        Expression selected = expression;
-                if(!controller.hasAllStateNames(expression.code))
+                if(!controller.hasAllStateNames(expression.code) || (controller.hasAllStateNames(expression.code) && !existAnimationOfExpression(expression.getList().Substring(1))))
                 {
                     selected = LocalParser.parseExpression(expression.word);
                 }
@@ -86,6 +86,15 @@ namespace LSB
             anim.speed = DEFAULT_SPEED;
             anim.SetInteger("currentSign", 0);
             mainText.text = "";
+        }
+
+        private bool existAnimationOfExpression(string codeExpression)
+        {
+            if (GetAnimationClip(codeExpression))
+            {
+                return true;
+            }
+            return false;
         }
 
         public AnimationClip GetAnimationClip(string code)
