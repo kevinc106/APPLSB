@@ -1,0 +1,9 @@
+- expression: "Tiempop"
+  code: ["01"]
+  synonymous: []
+- expression: "Tiempopps"
+  code: ["02"]
+  synonymous: []
+- expression: "Tiempofs"
+  code: ["03"]
+  synonymous: []

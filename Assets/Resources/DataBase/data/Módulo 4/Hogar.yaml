@@ -1,0 +1,60 @@
+- expression: "Microondas"
+  code: ["01"]
+  synonymous: []
+- expression: "Cocina"
+  code: ["02"]
+  synonymous: []
+- expression: "Jarra"
+  code: ["03"]
+  synonymous: []
+- expression: "Sandwichera"
+  code: ["04"]
+  synonymous: []
+- expression: "Detergente de ropa"
+  code: ["05"]
+  synonymous: []
+- expression: "Lavandina"
+  code: ["06"]
+  synonymous: []
+- expression: "Agarradores"
+  code: ["07"]
+  synonymous: ["Ganchos"]
+- expression: "Jabón"
+  code: ["08"]
+  synonymous: []
+- expression: "Garrafa de gas"
+  code: ["09"]
+  synonymous: []
+- expression: "Licuadora"
+  code: ["10"]
+  synonymous: []
+- expression: "Tender la ropa"
+  code: ["11"]
+  synonymous: ["Colgar la ropa"]
+- expression: "Balanza"
+  code: ["12"]
+  synonymous: []
+- expression: "Trapear"
+  code: ["13"]
+  synonymous: []
+- expression: "Secador"
+  code: ["14"]
+  synonymous: []
+- expression: "Reproductor de DVD"
+  code: ["15"]
+  synonymous: []
+- expression: "Cámara fotográfica"
+  code: ["16"]
+  synonymous: []
+- expression: "Aire acondicionado"
+  code: ["17"]
+  synonymous: []
+- expression: "Sartén"
+  code: ["18"]
+  synonymous: []
+- expression: "Anticrético"
+  code: ["19"]
+  synonymous: []
+- expression: "Alquiler"
+  code: ["20"]
+  synonymous: []

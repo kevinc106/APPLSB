@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Alfabeto dactilológico",
+    "code": "#00"
+  },
+  {
+    "name": "Adverbios de lugar",
+    "code": "#01"
+  },
+  {
+    "name": "Alimentos",
+    "code": "#02"
+  },
+  {
+    "name": "Animales",
+    "code": "#03"
+  },
+  {
+    "name": "Áreas de conocimientos",
+    "code": "#04"
+  },
+  {
+    "name": "Bebidas",
+    "code": "#05"
+  },
+  {
+    "name": "Calendario",
+    "code": "#06"
+  },
+  {
+    "name": "Cocinar",
+    "code": "#07"
+  },
+  {
+    "name": "Colores",
+    "code": "#08"
+  },
+  {
+    "name": "Continentes",
+    "code": "#09"
+  },
+  {
+    "name": "Cosas de alimentos",
+    "code": "#10"
+  },
+  {
+    "name": "Cosas de animales",
+    "code": "#11"
+  },
+  {
+    "name": "Cuerpo humano",
+    "code": "#12"
+  },
+  {
+    "name": "Cumpleaños",
+    "code": "#13"
+  },
+  {
+    "name": "Deportes",
+    "code": "#14"
+  },
+  {
+    "name": "Departamentos de Bolivia",
+    "code": "#15"
+  },
+  {
+    "name": "Diálogo",
+    "code": "#16"
+  },
+  {
+    "name": "Días de la semana",
+    "code": "#17"
+  },
+  {
+    "name": "Educación",
+    "code": "#18"
+  },
+  {
+    "name": "Educación especial",
+    "code": "#19"
+  },
+  {
+    "name": "Escuela",
+    "code": "#20"
+  },
+  {
+    "name": "Estado civil",
+    "code": "#21"
+  },
+  {
+    "name": "Familia",
+    "code": "#22"
+  },
+  {
+    "name": "Frutas",
+    "code": "#23"
+  },
+  {
+    "name": "General",
+    "code": "#24"
+  },
+  {
+    "name": "Historia",
+    "code": "#25"
+  },
+  {
+    "name": "Hogar",
+    "code": "#26"
+  },
+  {
+    "name": "Insectos",
+    "code": "#27"
+  },
+  {
+    "name": "Lugares",
+    "code": "#28"
+  },
+  {
+    "name": "Lugares turísticos",
+    "code": "#29"
+  },
+  {
+    "name": "Medios de transporte",
+    "code": "#30"
+  },
+  {
+    "name": "Naturaleza",
+    "code": "#31"
+  },
+  {
+    "name": "Números",
+    "code": "#32"
+  },
+  {
+    "name": "Opuesto",
+    "code": "#33"
+  },
+  {
+    "name": "Países",
+    "code": "#34"
+  },
+  {
+    "name": "Personas",
+    "code": "#35"
+  },
+  {
+    "name": "Política",
+    "code": "#36"
+  },
+  {
+    "name": "Preguntas",
+    "code": "#37"
+  },
+  {
+    "name": "Prendas de vestir",
+    "code": "#38"
+  },
+  {
+    "name": "Pronombres",
+    "code": "#39"
+  },
+  {
+    "name": "Restaurante",
+    "code": "#40"
+  },
+  {
+    "name": "Salud",
+    "code": "#41"
+  },
+  {
+    "name": "Salud sexual y reproductiva",
+    "code": "#42"
+  },
+  {
+    "name": "Saludos",
+    "code": "#43"
+  },
+  {
+    "name": "Sustantivos",
+    "code": "#44"
+  },
+  {
+    "name": "Tiempo",
+    "code": "#45"
+  },
+  {
+    "name": "Trabajo",
+    "code": "#46"
+  },
+  {
+    "name": "Verbos",
+    "code": "#47"
+  },
+  {
+    "name": "Verduras",
+    "code": "#48"
+  },
+  {
+    "name": "Tiempos verbales",
+    "code": "#99"
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "name": "Módulo 1",
+    "categories": [
+      {
+        "name": "Alfabeto dactilológico",
+        "set": "1"
+      },
+      {
+        "name": "Saludos",
+        "set": "1"
+      },
+      {
+        "name": "Familia",
+        "set": "1"
+      },
+      {
+        "name": "Cuerpo humano",
+        "set": "1"
+      },
+      {
+        "name": "Alimentos",
+        "set": "1"
+      },
+      {
+        "name": "Lugares",
+        "set": "1"
+      },
+      {
+        "name": "Naturaleza",
+        "set": "1"
+      },
+      {
+        "name": "Colores",
+        "set": "1"
+      },
+      {
+        "name": "Animales",
+        "set": "1"
+      },
+      {
+        "name": "Departamentos de Bolivia",
+        "set": "1"
+      },
+      {
+        "name": "Medios de transporte",
+        "set": "1"
+      },
+      {
+        "name": "Preguntas",
+        "set": "1"
+      },
+      {
+        "name": "Verbos",
+        "set": "1"
+      },
+      {
+        "name": "Sustantivos",
+        "set": "1"
+      },
+      {
+        "name": "Pronombres",
+        "set": "1"
+      },
+      {
+        "name": "Tiempo",
+        "set": "1"
+      },
+      {
+        "name": "Calendario",
+        "set": "1"
+      },
+      {
+        "name": "Días de la semana",
+        "set": "1"
+      },
+      {
+        "name": "Verduras",
+        "set": "1"
+      },
+      {
+        "name": "Frutas",
+        "set": "1"
+      },
+      {
+        "name": "Números",
+        "set": "1"
+      }
+    ]
+  },
+  {
+    "name": "Módulo 2",
+    "categories": [
+      {
+        "name": "Opuesto",
+        "set": "1"
+      },
+      {
+        "name": "Verbos",
+        "set": "2"
+      },
+      {
+        "name": "Continentes",
+        "set": "1"
+      },
+      {
+        "name": "Países",
+        "set": "1"
+      },
+      {
+        "name": "Tiempo",
+        "set": "2"
+      },
+      {
+        "name": "Prendas de vestir",
+        "set": "1"
+      },
+      {
+        "name": "Sustantivos",
+        "set": "2"
+      },
+      {
+        "name": "Familia",
+        "set": "2"
+      },
+      {
+        "name": "Animales",
+        "set": "2"
+      },
+      {
+        "name": "Trabajo",
+        "set": "1"
+      },
+      {
+        "name": "Historia",
+        "set": "1"
+      },
+      {
+        "name": "Lugares turísticos",
+        "set": "1"
+      },
+      {
+        "name": "Salud sexual y reproductiva",
+        "set": "1"
+      },
+      {
+        "name": "Educación especial",
+        "set": "1"
+      },
+      {
+        "name": "Educación",
+        "set": "1"
+      },
+      {
+        "name": "Áreas de conocimientos",
+        "set": "1"
+      },
+      {
+        "name": "Verduras",
+        "set": "2"
+      },
+      {
+        "name": "Frutas",
+        "set": "2"
+      },
+      {
+        "name": "Colores",
+        "set": "2"
+      },
+      {
+        "name": "Adverbios de lugar",
+        "set": "1"
+      },
+      {
+        "name": "Números",
+        "set": "2"
+      }
+    ]
+  },
+  {
+    "name": "Módulo 3",
+    "categories": [
+      {
+        "name": "Diálogo",
+        "set": "1"
+      },
+      {
+        "name": "Política",
+        "set": "1"
+      },
+      {
+        "name": "Salud",
+        "set": "1"
+      },
+      {
+        "name": "Verbos",
+        "set": "3"
+      },
+      {
+        "name": "Deportes",
+        "set": "1"
+      },
+      {
+        "name": "Hogar",
+        "set": "1"
+      },
+      {
+        "name": "Sustantivos",
+        "set": "3"
+      },
+      {
+        "name": "Escuela",
+        "set": "1"
+      },
+      {
+        "name": "Cocinar",
+        "set": "1"
+      },
+      {
+        "name": "Restaurante",
+        "set": "1"
+      },
+      {
+        "name": "Estado civil",
+        "set": "1"
+      },
+      {
+        "name": "Opuesto",
+        "set": "2"
+      },
+      {
+        "name": "Animales",
+        "set": "3"
+      },
+      {
+        "name": "General",
+        "set": "1"
+      },
+      {
+        "name": "Cumpleaños",
+        "set": "1"
+      },
+      {
+        "name": "Lugares",
+        "set": "2"
+      },
+      {
+        "name": "Tiempo",
+        "set": "3"
+      },
+      {
+        "name": "Números",
+        "set": "3"
+      }
+    ]
+  },
+  {
+    "name": "Módulo 4",
+    "categories": [
+      {
+        "name": "Cosas de animales",
+        "set": "1"
+      },
+      {
+        "name": "Verbos",
+        "set": "4"
+      },
+      {
+        "name": "Salud",
+        "set": "2"
+      },
+      {
+        "name": "Opuesto",
+        "set": "3"
+      },
+      {
+        "name": "Cosas de alimentos",
+        "set": "1"
+      },
+      {
+        "name": "Personas",
+        "set": "1"
+      },
+      {
+        "name": "Hogar",
+        "set": "2"
+      },
+      {
+        "name": "Países",
+        "set": "2"
+      },
+      {
+        "name": "Diálogo",
+        "set": "2"
+      },
+      {
+        "name": "Política",
+        "set": "2"
+      },
+      {
+        "name": "General",
+        "set": "2"
+      },
+      {
+        "name": "Prendas de vestir",
+        "set": "2"
+      },
+      {
+        "name": "Insectos",
+        "set": "1"
+      },
+      {
+        "name": "Sustantivos",
+        "set": "4"
+      },
+      {
+        "name": "Bebidas",
+        "set": "1"
+      },
+      {
+        "name": "Naturaleza",
+        "set": "2"
+      },
+      {
+        "name": "Escuela",
+        "set": "2"
+      },
+      {
+        "name": "Números",
+        "set": "4"
+      }
+    ]
+  },
+  {
+    "name": "Módulo 5",
+    "categories":[
+      {
+        "name": "Tiempos verbales",
+        "set": "1"
+      }
+    ]
+  }
+]
