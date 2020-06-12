@@ -29,7 +29,7 @@ namespace LSB
         {
             if(commander != null)
             {
-                commander.setSlowSpeed();
+                commander.SetSlowSpeed();
             }
             closePanel();
         }
@@ -38,7 +38,7 @@ namespace LSB
         {
             if (commander != null)
             {
-                commander.setMediumSpeed();
+                commander.SetMediumSpeed();
             }
             closePanel();
         }
@@ -47,7 +47,7 @@ namespace LSB
         {
             if (commander != null)
             {
-                commander.setFastSpeed();
+                commander.SetFastSpeed();
             }
             closePanel();
         }

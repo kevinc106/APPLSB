@@ -13,7 +13,8 @@ namespace CreationStates
         public string[] Code { get; set; }
         public string Type { get; set; }
         public bool Ignore { get; set; }
-        internal void updateExpression(string categoryCode, string set)
+
+        internal void UpdateExpression(string categoryCode, string set)
         {
             for (int i = 0; i < Code.Length; i++)
             {

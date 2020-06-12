@@ -15,41 +15,39 @@ namespace LSB
 
         private static float DEFAULT_SPEED = 1.0f;
 
-        public void start()
+        public void Start()
         {
             animationDuration = 1.5f;
             animationSpeed = 1.0f;
         }
 
-        public void setSlowSpeed()
+        public void SetSlowSpeed()
         {
             animationDuration = 1.5f;
             animationSpeed = 1.0f;
         }
 
-        public void setMediumSpeed()
+        public void SetMediumSpeed()
         {
             animationDuration = 1.0f;
             animationSpeed = 1.5f;
         }
 
-        public void setFastSpeed()
+        public void SetFastSpeed()
         {
             animationDuration = 0.5f;
             animationSpeed = 3.0f;
         }
 
         public void OnCommand(ExpressionList expressions)
-        {
-            Debug.Log("STARTCOROUTINE");
+        { 
             StartCoroutine(scene(expressions));
         }
 
         public void OnError(string word)
         {
-            Debug.Log("LLEGO AQUI ERROR");
-            Debug.Log("ERROR: " + word);
-            ExpressionList expressions = LocalParser.parseExpressionList(word);
+             
+            ExpressionList expressions = LocalParser.ParseExpressionList(word);
             Debug.Log(expressions.tokens.Count);
             StartCoroutine(scene(expressions));
         }
@@ -60,26 +58,27 @@ namespace LSB
             
             foreach (Expression expression in expressions.tokens)
             {
-                if(!expression.getList().Contains("#99"))
-		        {
-		            mainText.text = expression.word;
-                    Debug.Log("TIEMPO: "+mainText.text);
-		        }
-		        Expression selected = expression;
-                if(!controller.hasAllStateNames(expression.code) || (controller.hasAllStateNames(expression.code) && !existAnimationOfExpression(expression.getList().Substring(1))))
+                if (!expression.getList().Contains("#99"))
                 {
-                    selected = LocalParser.parseExpression(expression.word);
+                    mainText.text = expression.word;
+
+                }
+                
+		        Expression selected = expression;
+                if(!controller.HasAllStateNames(expression.code) || !controller.StateHasAnimationClip(anim,expression))
+                {
+                    selected = LocalParser.ParseExpression(expression.word);
                 }
                 foreach(string code in selected.code)
                 {
                     anim.SetInteger("currentSign", int.Parse(code.Substring(1)));
                      
-                    AnimationClip clip = GetAnimationClip(code.Substring(1));
+                    AnimationClip clip = controller.GetAnimationClip(anim,code.Substring(1));
                     if (clip)
                     {
                         animationDuration = clip.length; 
                     }
-                    Debug.Log("ANIMATION DURATION: " + animationDuration + " -- ANIMATION SPEED: " + animationSpeed); 
+                      
                     yield return new WaitForSeconds(animationDuration); 
                 }
             }
@@ -87,28 +86,6 @@ namespace LSB
             anim.SetInteger("currentSign", 0);
             mainText.text = "";
         }
-
-        private bool existAnimationOfExpression(string codeExpression)
-        {
-            if (GetAnimationClip(codeExpression))
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public AnimationClip GetAnimationClip(string code)
-        {  
-            AnimationClip[] clips = anim.runtimeAnimatorController.animationClips;
-            foreach (AnimationClip clip in clips)
-            {
-                if (clip.name.Contains(code))
-                {
-                    return clip; 
-                }
-            }
-            return null;
-        }
-
+         
     }
 }

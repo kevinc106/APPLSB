@@ -10,37 +10,22 @@ using System.Linq;
 // Create a menu item that causes a new controller and statemachine to be created.
 public class StateMachine : MonoBehaviour
 {
-    static string resourcesFolder = "Assets/Resources/";
-    static string categoryPath = Path.Combine(resourcesFolder, @"DataBase\config\categories.json");
-    static string configPath = Path.Combine(resourcesFolder, @"DataBase\config\data.json");
+    static string UNITY_RESOURCES_FOLDER = "Assets/Resources/";
+    static string CATEGORY_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, @"DataBase\config\categories.json");
+    static string CONFIG_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, @"DataBase\config\data.json");
     static Database dataBase;
-    static List<object> expressionCodes = new List<object>();/*{
-        "#47101",
-        "#47102",
-        "#47103",
-        "#47104",
-        "#47105",
-        "#47106",
-        "#47107",
-        "#47108",
-        "#47109",
-        "#47110",
-        "#00106"
-    };*/
-    static AnimatorState state = new AnimatorState();
-    static float positionStateX = 1;
-    static float positionStateY = 1;
+    static List<object> expressionCodes = new List<object>();  
     static AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>("Assets/Default.controller");
     
-    static List<AnimatorStateTransition> animatorStateTransitionList = new List<AnimatorStateTransition>();
+    static List<AnimatorStateTransition> currentTransitions = new List<AnimatorStateTransition>();
 
     [MenuItem("Menu Controller LSB/Create new Controller")]
     static void CreateController()
     {
         try
         {
-            dataBase = new Database(categoryPath, configPath);
-            expressionCodes = dataBase.expressions;
+            dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
+            expressionCodes = dataBase.Expressions;
             if (controller==null)
             {
                 controller = AnimatorController.CreateAnimatorControllerAtPath("Assets/Default.controller"); 
@@ -48,15 +33,14 @@ public class StateMachine : MonoBehaviour
                 
                 // Add parameters
                 controller.AddParameter("currentSign", AnimatorControllerParameterType.Int);
-                controller.AddParameter("animationSpeed", AnimatorControllerParameterType.Float); 
-
+                controller.AddParameter("animationSpeed", AnimatorControllerParameterType.Float);
                 var rootStateMachine = controller.layers[0].stateMachine;
-                controller.layers[0].stateMachine.name = "Base Layer";
+                controller.layers[0].stateMachine.name = "Base Layer"; 
 
                 // Add States  
                 //SetState("MainIdle");
                 AnimatorState newState = GetNewState(rootStateMachine, "MainIdle");
-                newState.motion = getMainIdleAnimation(); 
+                newState.motion = GetMainIdleAnimation(); 
                 Debug.Log("MaindIdle state created"); 
                 AddTransitionToList(newState);
             }
@@ -71,7 +55,7 @@ public class StateMachine : MonoBehaviour
         }
     }
 
-    static AnimationClip getMainIdleAnimation()
+    static AnimationClip GetMainIdleAnimation()
     {
         var animationClips = Resources.LoadAll(@"Animations");  
         foreach (AnimationClip clip in animationClips)
@@ -82,20 +66,8 @@ public class StateMachine : MonoBehaviour
             }
         }
         return null;
-    }
-
-    static void SetNewPositionState(float posX,float posY)
-    {
-        positionStateX = positionStateX +(3 * posX);
-        positionStateY = positionStateY +(3 * posY);
-    }
-
-    static void SetState(string code)
-    {
-        state.name = code;
-        state.speedParameterActive = true;
-        state.speedParameter = "animationSpeed";
     } 
+     
     
     static bool IsAlreadyState(string stateName)
     {
@@ -122,8 +94,8 @@ public class StateMachine : MonoBehaviour
     static void LoadAllStates()
     { 
         var rootStateMachine = controller.layers[0].stateMachine;
-        dataBase = new Database(categoryPath, configPath);
-        expressionCodes = dataBase.expressions;
+        dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
+        expressionCodes = dataBase.Expressions;
         foreach (ExpressionData expression in expressionCodes)
         {     
             if (!IsAlreadyState(expression.Code[0]))
@@ -136,10 +108,10 @@ public class StateMachine : MonoBehaviour
                 Debug.Log("State: " + expression.Code[0] + " has already created");
             } 
         }
-        addStatesToAnimatorControllerStatesFile();
+        AddStatesToAnimatorControllerStatesFile();
     }
 
-    private static void addStatesToAnimatorControllerStatesFile()
+    private static void AddStatesToAnimatorControllerStatesFile()
     {
         var rootStateMachine = controller.layers[0].stateMachine;
         List<ChildAnimatorState> animatorStates = new List<ChildAnimatorState>(rootStateMachine.states);
@@ -161,7 +133,7 @@ public class StateMachine : MonoBehaviour
 
     static void AddTransitionToList(AnimatorState destinationState)
     {  
-        animatorStateTransitionList.Add(GetAnimatorStateTransition(destinationState)); 
+        currentTransitions.Add(GetAnimatorStateTransition(destinationState)); 
     }
 
     static AnimatorStateTransition GetAnimatorStateTransition(AnimatorState destinationAnimatorState){
@@ -206,15 +178,15 @@ public class StateMachine : MonoBehaviour
             ChildAnimatorState[] animatorStatesList = rootStateMachine.states;
             if (rootStateMachine.anyStateTransitions.Length<1)
             {
-                reloadAllTransitions(animatorStatesList);
+                ReloadAllTransitions(animatorStatesList);
             }
             else
             {
-                List<AnimatorStateTransition> oldTransitions = rootStateMachine.anyStateTransitions.OfType<AnimatorStateTransition>().ToList();
-                oldTransitions.AddRange(animatorStateTransitionList);
-                rootStateMachine.anyStateTransitions= oldTransitions.ToArray();
+                List<AnimatorStateTransition> oldTransitions = GetOldTransitionsList(rootStateMachine);
+                oldTransitions.AddRange(currentTransitions);
+                rootStateMachine.anyStateTransitions = oldTransitions.ToArray();
             }
-            rootStateMachine.anyStateTransitions = animatorStateTransitionList.ToArray();
+            rootStateMachine.anyStateTransitions = currentTransitions.ToArray();
             Debug.Log("Transitions reloaded");
         }
         catch(Exception error)
@@ -223,34 +195,26 @@ public class StateMachine : MonoBehaviour
         }
     }
 
-    static void reloadAllTransitions(ChildAnimatorState[] animatorStatesList)
+    private static List<AnimatorStateTransition> GetOldTransitionsList(AnimatorStateMachine rootStateMachine)
     {
-        animatorStateTransitionList = new List<AnimatorStateTransition>();
+        return rootStateMachine.anyStateTransitions.OfType<AnimatorStateTransition>().ToList();
+    }
+
+    static void ReloadAllTransitions(ChildAnimatorState[] animatorStatesList)
+    {
+        currentTransitions = new List<AnimatorStateTransition>();
         foreach (var animatorState in animatorStatesList)
         {
             AddTransitionToList(animatorState.state);
         } 
     }
-
-    static void AddTransitionFromAnyStateToDestination(AnimatorState destinationState)
-    {
-        try
-        {
-            var rootStateMachine = controller.layers[0].stateMachine;
-            AnimatorStateTransition st = GetAnimatorStateTransition(destinationState);
-            
-        }
-        catch (Exception error)
-        {
-            Debug.Log("AddTransitionFromAnyStateToDestination ERROR: " + error.Message + " -- " + error.Source);
-        }
-    }
+ 
 
     [MenuItem("Menu Controller LSB/3. Load all Animations")]
     static void LoadAnimations()
     {
-        dataBase = new Database(categoryPath, configPath);
-        expressionCodes = dataBase.expressions;
+        dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
+        expressionCodes = dataBase.Expressions;
         var animationClips = Resources.LoadAll(@"Animations");
             Debug.Log("Clips Founded: " + animationClips.Length);
             var rootStateMachine = controller.layers[0].stateMachine; 

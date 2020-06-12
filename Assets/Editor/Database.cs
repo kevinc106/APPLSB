@@ -17,12 +17,12 @@ namespace CreationStates
 {
     public class Database
     {
-        public List<object> expressions { get; set; } = new List<object>();
-        public ArrayList dictionary { get; set; }
+        public List<object> Expressions { get; set; } = new List<object>();
+        public ArrayList Dictionary { get; set; }
         
         public Database(String categoryPath,String configPath)
         { 
-            initializeCategoryDictionary(categoryPath);
+            InitializeCategoryDictionary(categoryPath);
             ArrayList data;
             using (StreamReader reader = new StreamReader(configPath))
             {
@@ -30,13 +30,13 @@ namespace CreationStates
                 data = JsonConvert.DeserializeObject<ArrayList>(json);
                 foreach (var item in data)
                 {
-                    var moduleExpressions = loadModule((JObject)item);
-                    expressions.AddRange(moduleExpressions);
+                    var moduleExpressions = LoadModule((JObject)item);
+                    Expressions.AddRange(moduleExpressions);
                 } 
             } 
         }
 
-        private List<object> loadModule(JObject module)
+        private List<object> LoadModule(JObject module)
         {
             List<object> response =new List<object>();
             foreach (var category in module["categories"])
@@ -44,7 +44,7 @@ namespace CreationStates
                 //Debug.Log(category);
                 try
                 {
-                    String categoryCode = getCategoryCode(category["name"]);
+                    String categoryCode = GetCategoryCode(category["name"]);
                     if (categoryCode==null)
                     {
                         throw new Exception("Not valid category");
@@ -61,7 +61,7 @@ namespace CreationStates
                             expressionsData = GetExpressionsFromReader(reader); 
                             foreach (ExpressionData expression in expressionsData)
                             {
-                               expression.updateExpression(categoryCode, category["set"].ToString());
+                               expression.UpdateExpression(categoryCode, category["set"].ToString());
 
                             }
                             response.AddRange(expressionsData);
@@ -95,9 +95,9 @@ namespace CreationStates
             return expressionsData;
         }
 
-        private string getCategoryCode(object categoryName)
+        private string GetCategoryCode(object categoryName)
         {
-            foreach(JObject category in dictionary)
+            foreach(JObject category in Dictionary)
             {
                 if (category["name"].ToString() == categoryName.ToString())
                 {
@@ -107,14 +107,14 @@ namespace CreationStates
             return null;
         }
 
-        private void initializeCategoryDictionary(string categoryPath)
+        private void InitializeCategoryDictionary(string categoryPath)
         { 
             try
             {
                 using (StreamReader r = new StreamReader(categoryPath))
                 {
                     string json = r.ReadToEnd();
-                    dictionary = JsonConvert.DeserializeObject<ArrayList>(json); 
+                    Dictionary = JsonConvert.DeserializeObject<ArrayList>(json); 
                 }
             }
             catch (Exception er)

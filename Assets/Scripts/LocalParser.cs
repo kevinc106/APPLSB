@@ -9,7 +9,7 @@ namespace LSB
 {
     public class LocalParser
     {
-        public static ExpressionList parseExpressionList(string input)
+        public static ExpressionList ParseExpressionList(string input)
         {
             ExpressionList output = new ExpressionList();
             output.tokens = new List<Expression>();
@@ -28,7 +28,7 @@ namespace LSB
             return output;
         }
 
-        public static Expression parseExpression(string input)
+        public static Expression ParseExpression(string input)
         {
             Expression expression = new Expression();
             expression.word = RemoveDiacritics(input.ToLower());

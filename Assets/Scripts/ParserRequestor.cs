@@ -27,7 +27,7 @@ namespace LSB
         public void OnRequest(string word)
         {
             inputField.text = "";
-            Debug.Log("REQUEST: " + word);
+             
             StartCoroutine(Request(word));
         }
 
@@ -38,10 +38,9 @@ namespace LSB
             UnityWebRequest request = new UnityWebRequest(API_URL, "POST");
             request.timeout = 10;
             byte[] bodyRaw = Encoding.UTF8.GetBytes(JsonUtility.ToJson(createRequest(word)));
-            Debug.Log("JSON?1 - " + JsonUtility.ToJson(createRequest(word)));
-           // Debug.Log("BODYRAW?: " + bodyRaw.ToString());
+             
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-            Debug.Log("uploadHandler?: " + request.uploadHandler.contentType); 
+              
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
             yield return request.SendWebRequest();
