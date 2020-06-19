@@ -1,11 +1,11 @@
-- expression: "La Paz"
+﻿- expression: "La Paz"
   code: ["01"]
   synonymous: []
 - expression: "Santa Cruz"
   code: ["02"]
   synonymous: []
 - expression: "Cochabamba"
-  code: ["#00103", "#00102", "#00101"]
+  code: ["03"]
   synonymous: []
 - expression: "Oruro"
   code: ["04"]
