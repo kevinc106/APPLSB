@@ -9,7 +9,7 @@
   synonymous: []
 - expression: "Por qué"
   code: ["04"]
-  synonymous: []
+  synonymous: ["por que","porque"]
 - expression: "Qué"
   code: ["05"]
   synonymous: []

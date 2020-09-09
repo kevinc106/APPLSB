@@ -21,7 +21,7 @@
   synonymous: []
 - expression: "Próximo"
   code: ["08"]
-  synonymous: []
+  synonymous: ["Hasta la próxima", "Hasta la proxima"]
 - expression: "Año pasado"
   code: ["09"]
   synonymous: []
@@ -36,4 +36,10 @@
   synonymous: []
 - expression: "Todos los días"
   code: ["13"]
+  synonymous: []
+- expression: "Nos vemos más tarde"
+  code: ["14"]
+  synonymous: ["Nos vemos mas tarde"]
+- expression: "Nos vemos mañana"
+  code: ["15"]
   synonymous: []

@@ -19,7 +19,7 @@ public class StateMachine : MonoBehaviour
     
     static List<AnimatorStateTransition> currentTransitions = new List<AnimatorStateTransition>();
 
-    [MenuItem("Menu Controller LSB/Create new Controller")]
+    [MenuItem("Menu Controller LSB/Create New Controller")]
     static void CreateController()
     {
         try
@@ -210,7 +210,7 @@ public class StateMachine : MonoBehaviour
     }
  
 
-    [MenuItem("Menu Controller LSB/3. Load all Animations")]
+    [MenuItem("Menu Controller LSB/3. Load All Animations")]
     static void LoadAnimations()
     {
         dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);

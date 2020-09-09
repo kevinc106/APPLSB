@@ -10,8 +10,8 @@ namespace LSB
 {
     public class ParserRequestor : MonoBehaviour
     {
-        private static readonly string API_URL = "https://lsbapi.herokuapp.com";
-
+        //private static readonly string API_URL = "https://lsbapi.herokuapp.com";
+	private static readonly string API_URL = "http://localhost:3000";
         [Serializable] public class ResultHandler : UnityEvent<UnityWebRequest, string> { }
         public ResultHandler OnResult;
 

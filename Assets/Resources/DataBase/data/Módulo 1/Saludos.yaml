@@ -6,7 +6,7 @@
   synonymous: ["Chao"]
 - expression: "Permiso"
   code: ["03"]
-  synonymous: []
+  synonymous: ["Con permiso","Con su permiso","Si me disculpa","Disculpe"]
 - expression: "Buenos días"
   code: ["04"]
   synonymous: []
@@ -24,7 +24,7 @@
   synonymous: []
 - expression: "Cómo estás"
   code: ["09"]
-  synonymous: []
+  synonymous: ["como estas"]
 - expression: "Estoy bien"
   code: ["10"]
   synonymous: []
@@ -52,7 +52,25 @@
   synonymous: []
 - expression: "Lo siento"
   code: ["18"]
-  synonymous: []
+  synonymous: ["Disculpa"]
 - expression: "Te amo"
   code: ["19"]
   synonymous: []
+- expression: "Tú nombre"
+  code: ["20"]
+  synonymous: ["tu nombre","tú nombre","cómo te llamas","como te llamas","que te llamas","qué te llamas","cual es tu nombre","cuál es tu nombre"]
+- expression: "No gracias"
+  code: ["21"]
+  synonymous: []
+- expression: "Muchas gracias"
+  code: ["22"]
+  synonymous: []
+- expression: "Cómo te sientes"
+  code: ["23"]
+  synonymous: ["como te sientes"]
+- expression: "Provecho"
+  code: ["24"]
+  synonymous: []
+- expression: "Bienvenido"
+  code: ["25"]
+  synonymous: ["Bienvenido"]
