@@ -55,13 +55,12 @@ namespace LSB
         public IEnumerator scene(ExpressionList expressions)
         {
             anim.speed = animationSpeed; 
-            
+             
             foreach (Expression expression in expressions.tokens)
             {
                 if (!expression.getList().Contains("#99"))
                 {
                     mainText.text = expression.word;
-
                 }
                 
 		        Expression selected = expression;
