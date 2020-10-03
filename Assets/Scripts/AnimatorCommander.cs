@@ -19,7 +19,7 @@ namespace LSB
         {
             animationDuration = 1.5f;
             animationSpeed = 1.0f;
-        }
+        } 
 
         public void SetSlowSpeed()
         {
