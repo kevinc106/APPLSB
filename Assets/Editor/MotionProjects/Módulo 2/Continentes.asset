@@ -30,9 +30,9 @@ MonoBehaviour:
     ConfigToolMode:
       valueInternal: 2
     OpenedClipIndex:
-      valueInternal: 7
+      valueInternal: 6
     SelectedFrame:
-      valueInternal: 0
+      valueInternal: 118
     TimelineViewMode:
       valueInternal: 0
     FramesScrollPosition:
@@ -40,7 +40,7 @@ MonoBehaviour:
     FramesZoom:
       valueInternal: 0.04
     PropertiesScrollPosition:
-      valueInternal: 814
+      valueInternal: 0
     PropertiesZoom:
       valueInternal: 1
     CurveYScrollPosition:
@@ -57079,7 +57079,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.22190621
+        valueInternal: 0.53919786
       ReferencePoseValue:
         valueInternal: 0.045395095
       PoseValueList: []
@@ -57117,7 +57117,7 @@ MonoBehaviour:
             valueInternal: 0.22190621
           newKeyListSerialized: 04000000000000000000623b633e0000000000000000abaaaa3eabaaaa3e44010000003100000000cf56d53ef54b233b33537839abaaaa3eabaaaa3e440100000046000000000576d73e37a8cd39e97251bbabaaaa3eabaaaa3e44010000005a0000000006a9a53e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.16158746
+        valueInternal: -0.29081497
       ReferencePoseValue:
         valueInternal: -0.033256374
       PoseValueList: []
@@ -57155,7 +57155,7 @@ MonoBehaviour:
             valueInternal: 0.16158746
           newKeyListSerialized: 040000000000000000002f77253e0000000000000000abaaaa3eabaaaa3e440100000031000000003673c3bbce790cbb017d59bbabaaaa3eabaaaa3e44010000004600000000902783bd6c1eb4bb62d18d3babaaaa3eabaaaa3e44010000005a000000003d9b8a3d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.60602146
+        valueInternal: -0.45255098
       ReferencePoseValue:
         valueInternal: 0.019759012
       PoseValueList: []
@@ -57193,7 +57193,7 @@ MonoBehaviour:
             valueInternal: -0.60602146
           newKeyListSerialized: 0400000000000000000039241bbf0000000000000000abaaaa3eabaaaa3e44010000003100000000e64e0cbffb50423a5f69243aabaaaa3eabaaaa3e44010000004600000000997f09bf7529883a414bc7baabaaaa3eabaaaa3e44010000005a00000000515815bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.74658275
+        valueInternal: 0.64798915
       ReferencePoseValue:
         valueInternal: 0.99821985
       PoseValueList: []
@@ -57231,7 +57231,7 @@ MonoBehaviour:
             valueInternal: 0.74658275
           newKeyListSerialized: 040000000000000000000c203f3f0000000000000000abaaaa3eabaaaa3e4401000000310000000078a8393ff93c8fb90e4a3439abaaaa3eabaaaa3e44010000004600000000a96d3a3fbc4f95397739eb39abaaaa3eabaaaa3e44010000005a0000000088ec3d3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 274.40884
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -57702,7 +57702,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.0010624711
+        valueInternal: 0.89933556
       ReferencePoseValue:
         valueInternal: 0.022431375
       PoseValueList: []
@@ -57740,7 +57740,7 @@ MonoBehaviour:
             valueInternal: -0.0010624711
           newKeyListSerialized: 040000000000000000009d428bba0000000000000000abaaaa3eabaaaa3e4401000000310000000026ff293fa61c063c9a21d33aabaaaa3eabaaaa3e440100000046000000008c36313f9809fb3aab7a31bcabaaaa3eabaaaa3e44010000005a0000000030a9d03e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.060696516
+        valueInternal: 0.04479404
       ReferencePoseValue:
         valueInternal: 0.04449297
       PoseValueList: []
@@ -57778,7 +57778,7 @@ MonoBehaviour:
             valueInternal: 0.060696516
           newKeyListSerialized: 04000000000000000000e99c783d0000000000000000abaaaa3eabaaaa3e4401000000310000000018dbed3e92dea23b9afe1abcabaaaa3eabaaaa3e44010000004600000000dc17993e4f4a38bc1a07bf3aabaaaa3eabaaaa3e44010000005a000000006eb4ac3e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.0053134197
+        valueInternal: -0.114609994
       ReferencePoseValue:
         valueInternal: 0.015559807
       PoseValueList: []
@@ -57816,7 +57816,7 @@ MonoBehaviour:
             valueInternal: -0.0053134197
           newKeyListSerialized: 04000000000000000000321caebb0000000000000000abaaaa3eabaaaa3e4401000000310000000054d9983e7111753bb740013cabaaaa3eabaaaa3e44010000004600000000b888df3edcae193cb3f7b1baabaaaa3eabaaaa3e44010000005a000000006543cd3e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9981416
+        valueInternal: 0.41958672
       ReferencePoseValue:
         valueInternal: 0.99863666
       PoseValueList: []
@@ -57854,7 +57854,7 @@ MonoBehaviour:
             valueInternal: 0.9981416
           newKeyListSerialized: 0400000000000000000035867f3f0000000000000000abaaaa3eabaaaa3e440100000031000000007f0b013f1b3ec7bb3a6c48baabaaaa3eabaaaa3e440100000046000000004b3dfb3e124e6eba8d5b203cabaaaa3eabaaaa3e44010000005a00000000a7783f3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 324.88446
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -58325,7 +58325,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.01795395
+        valueInternal: -0.2141332
       ReferencePoseValue:
         valueInternal: 0.04267691
       PoseValueList: []
@@ -58363,7 +58363,7 @@ MonoBehaviour:
             valueInternal: 0.01795395
           newKeyListSerialized: 020000000000000000002a14933c0000000000000000abaaaa3eabaaaa3e44010000005a00000000462c3dbc0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.04620645
+        valueInternal: 0.09321528
       ReferencePoseValue:
         valueInternal: 0.041260965
       PoseValueList: []
@@ -58401,7 +58401,7 @@ MonoBehaviour:
             valueInternal: -0.04620645
           newKeyListSerialized: 02000000000000000000f9423dbd0000000000000000abaaaa3eabaaaa3e44010000005a00000000710dff3c0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.042169996
+        valueInternal: 0.17159855
       ReferencePoseValue:
         valueInternal: -0.031502932
       PoseValueList: []
@@ -58439,7 +58439,7 @@ MonoBehaviour:
             valueInternal: -0.042169996
           newKeyListSerialized: 0200000000000000000072ba2cbd0000000000000000abaaaa3eabaaaa3e44010000005a00000000bbd4ae3e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9978803
+        valueInternal: 0.95708543
       ReferencePoseValue:
         valueInternal: 0.9977393
       PoseValueList: []
@@ -58477,7 +58477,7 @@ MonoBehaviour:
             valueInternal: 0.9978803
           newKeyListSerialized: 0200000000000000000015757f3f0000000000000000abaaaa3eabaaaa3e44010000005a000000006f76703f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 122.31549
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -58948,7 +58948,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.047383957
+        valueInternal: -0.049630217
       ReferencePoseValue:
         valueInternal: 0.04411877
       PoseValueList: []
@@ -58986,7 +58986,7 @@ MonoBehaviour:
             valueInternal: 0.047383957
           newKeyListSerialized: 04000000000000000000ae15423d0000000000000000abaaaa3eabaaaa3e440100000031000000001f9ac93d750c203b417c5bbbabaaaa3eabaaaa3e44010000004600000000ec2187bd9b6883bce8d9893babaaaa3eabaaaa3e44010000005a000000009989ff3d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.07151945
+        valueInternal: 0.101084456
       ReferencePoseValue:
         valueInternal: 0.1333038
       PoseValueList: []
@@ -59024,7 +59024,7 @@ MonoBehaviour:
             valueInternal: 0.07151945
           newKeyListSerialized: 04000000000000000000ca78923d0000000000000000abaaaa3eabaaaa3e4401000000310000000061354f3ded3b83ba032f603aabaaaa3eabaaaa3e440100000046000000000597bd3db638863b3a78c13aabaaaa3eabaaaa3e44010000005a00000000df54233e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.046491105
+        valueInternal: 0.002377991
       ReferencePoseValue:
         valueInternal: 0.050107043
       PoseValueList: []
@@ -59062,7 +59062,7 @@ MonoBehaviour:
             valueInternal: 0.046491105
           newKeyListSerialized: 04000000000000000000756d3e3d0000000000000000abaaaa3eabaaaa3e44010000003100000000b0d0c13da9ed163b70dd1fbaabaaaa3eabaaaa3e44010000004600000000bb7f843d236d3fbb417875bcabaaaa3eabaaaa3e44010000005a00000000525a1dbf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9952282
+        valueInternal: 0.99363667
       ReferencePoseValue:
         valueInternal: 0.988824
       PoseValueList: []
@@ -59100,7 +59100,7 @@ MonoBehaviour:
             valueInternal: 0.9952282
           newKeyListSerialized: 0400000000000000000046c77e3f0000000000000000abaaaa3eabaaaa3e4401000000310000000073457d3ffda493b929aa3038abaaaa3eabaaaa3e44010000004600000000f8cc7d3fee8a5339fd86a5bbabaaaa3eabaaaa3e44010000005a00000000a429433f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 23.72431
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -59571,7 +59571,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.022778666
+        valueInternal: 0.17540915
       ReferencePoseValue:
         valueInternal: 0.019943986
       PoseValueList: []
@@ -59609,7 +59609,7 @@ MonoBehaviour:
             valueInternal: 0.022778666
           newKeyListSerialized: 04000000000000000000539aba3c0000000000000000abaaaa3eabaaaa3e4401000000310000000004b11e3c000d93b9fc4593b9abaaaa3eabaaaa3e44010000004600000000be7a4d3bc38627bac1b5193aabaaaa3eabaaaa3e44010000005a00000000076f923e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.043820348
+        valueInternal: -0.007719756
       ReferencePoseValue:
         valueInternal: 0.016293181
       PoseValueList: []
@@ -59647,7 +59647,7 @@ MonoBehaviour:
             valueInternal: -0.043820348
           newKeyListSerialized: 04000000000000000000f77c33bd0000000000000000abaaaa3eabaaaa3e44010000003100000000dcd830bdb9bc6737c9397237abaaaa3eabaaaa3e44010000004600000000d4772fbdafc40938def626b7abaaaa3eabaaaa3e44010000005a00000000f82143bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.1038048
+        valueInternal: -0.8909821
       ReferencePoseValue:
         valueInternal: -0.047535013
       PoseValueList: []
@@ -59685,7 +59685,7 @@ MonoBehaviour:
             valueInternal: -0.1038048
           newKeyListSerialized: 040000000000000000009c97d4bd0000000000000000abaaaa3eabaaaa3e44010000003100000000826d9ebd3085143a48f5143aabaaaa3eabaaaa3e440100000046000000005a4a83bd5e71a93a67e397baabaaaa3eabaaaa3e44010000005a00000000f5851fbf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9933712
+        valueInternal: 0.4187159
       ReferencePoseValue:
         valueInternal: 0.99853754
       PoseValueList: []
@@ -59723,7 +59723,7 @@ MonoBehaviour:
             valueInternal: 0.9933712
           newKeyListSerialized: 04000000000000000000934d7e3f0000000000000000abaaaa3eabaaaa3e440100000031000000003cfb7e3f16176e389e693338abaaaa3eabaaaa3e440100000046000000009b3c7f3fdb15cc38121013baabaaaa3eabaaaa3e44010000005a0000000040f4393f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 129.35175
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -60194,7 +60194,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.22244963
+        valueInternal: -0.12844191
       ReferencePoseValue:
         valueInternal: -0.21592604
       PoseValueList: []
@@ -60232,7 +60232,7 @@ MonoBehaviour:
             valueInternal: -0.22244963
           newKeyListSerialized: 04000000000000000000d6c963be0000000000000000abaaaa3eabaaaa3e44010000003100000000971a6cbe927736b9a81033b9abaaaa3eabaaaa3e440100000046000000002a2f70bec2d1cbb9b42cf639abaaaa3eabaaaa3e44010000005a00000000bccb0bbc0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.23939006
+        valueInternal: -0.03991599
       ReferencePoseValue:
         valueInternal: -0.19339971
       PoseValueList: []
@@ -60270,7 +60270,7 @@ MonoBehaviour:
             valueInternal: -0.23939006
           newKeyListSerialized: 04000000000000000000ab2275be0000000000000000abaaaa3eabaaaa3e440100000031000000009dff79be0c6cd5b8ab35ceb8abaaaa3eabaaaa3e4401000000460000000013597cbe6bb76ab9796ba939abaaaa3eabaaaa3e44010000005a00000000b020babd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.018172126
+        valueInternal: -0.6591417
       ReferencePoseValue:
         valueInternal: 0.049197286
       PoseValueList: []
@@ -60308,7 +60308,7 @@ MonoBehaviour:
             valueInternal: -0.018172126
           newKeyListSerialized: 04000000000000000000b6dd94bc0000000000000000abaaaa3eabaaaa3e440100000031000000008504203ce4f11c3abdeb1c3aabaaaa3eabaaaa3e44010000004600000000f06ec23c299db23af620a6baabaaaa3eabaaaa3e44010000005a00000000281d16bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9449219
+        valueInternal: 0.73989296
       ReferencePoseValue:
         valueInternal: 0.9557992
       PoseValueList: []
@@ -60346,7 +60346,7 @@ MonoBehaviour:
             valueInternal: 0.9449219
           newKeyListSerialized: 0400000000000000000067e6713f0000000000000000abaaaa3eabaaaa3e440100000031000000000a1f713f45b588b80398a4b8abaaaa3eabaaaa3e4401000000460000000005a7703ffb583bb9b33993b9abaaaa3eabaaaa3e44010000005a000000004d0c4e3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 93.99465
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -61440,7 +61440,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.01511726
+        valueInternal: -0.042190187
       ReferencePoseValue:
         valueInternal: -0.016281096
       PoseValueList: []
@@ -61478,7 +61478,7 @@ MonoBehaviour:
             valueInternal: -0.01511726
           newKeyListSerialized: 0400000000000000000062ae77bc0000000000000000abaaaa3eabaaaa3e44010000003100000000de9741bb2834d539fe5d9cbaabaaaa3eabaaaa3e44010000004600000000d0fe4fbdeee498bb01982d3aabaaaa3eabaaaa3e44010000005a00000000bcf95b3d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.0008036273
+        valueInternal: 0.007353531
       ReferencePoseValue:
         valueInternal: 0.020424215
       PoseValueList: []
@@ -61516,7 +61516,7 @@ MonoBehaviour:
             valueInternal: -0.0008036273
           newKeyListSerialized: 0400000000000000000084aa52ba0000000000000000abaaaa3eabaaaa3e440100000031000000000f68c4bb22f435b962e29839abaaaa3eabaaaa3e4401000000460000000094a8ba3b207d953a5a36d638abaaaa3eabaaaa3e44010000005a0000000032b1b23c0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.030016178
+        valueInternal: 0.009452794
       ReferencePoseValue:
         valueInternal: 0.0329152
       PoseValueList: []
@@ -61554,7 +61554,7 @@ MonoBehaviour:
             valueInternal: 0.030016178
           newKeyListSerialized: 040000000000000000007de4f53c0000000000000000abaaaa3eabaaaa3e44010000003100000000ed25853d1d5d993a96d37839abaaaa3eabaaaa3e4401000000460000000094a1983dd44c733af99593bbabaaaa3eabaaaa3e44010000005a00000000dbd822bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9994351
+        valueInternal: 0.9990383
       ReferencePoseValue:
         valueInternal: 0.99911684
       PoseValueList: []
@@ -61592,7 +61592,7 @@ MonoBehaviour:
             valueInternal: 0.9994351
           newKeyListSerialized: 04000000000000000000fbda7f3f0000000000000000abaaaa3eabaaaa3e44010000003100000000e4737f3f14955cb81d4b4cb8abaaaa3eabaaaa3e44010000004600000000ecf37e3f8fc147b91c28bcbaabaaaa3eabaaaa3e44010000005a00000000f7f7443f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 15.046159
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -62063,7 +62063,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.0126241585
+        valueInternal: 0.010413824
       ReferencePoseValue:
         valueInternal: -0.01600273
       PoseValueList: []
@@ -62101,7 +62101,7 @@ MonoBehaviour:
             valueInternal: -0.0126241585
           newKeyListSerialized: 040000000000000000008fd54ebc0000000000000000abaaaa3eabaaaa3e44010000003100000000bf1b81bcefcf8cb806bb8cb8abaaaa3eabaaaa3e44010000004600000000bce98dbce1e61fb9c3601b39abaaaa3eabaaaa3e44010000005a000000003d675e3d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.056493632
+        valueInternal: -0.013810039
       ReferencePoseValue:
         valueInternal: -0.04800159
       PoseValueList: []
@@ -62139,7 +62139,7 @@ MonoBehaviour:
             valueInternal: -0.056493632
           newKeyListSerialized: 04000000000000000000de6567bd0000000000000000abaaaa3eabaaaa3e44010000003100000000ee0c65bd33db4d37f8b25b37abaaaa3eabaaaa3e4401000000460000000018cd63bdc7a0f9377f5c8fb5abaaaa3eabaaaa3e44010000005a0000000070ea65bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.11782285
+        valueInternal: -0.8704061
       ReferencePoseValue:
         valueInternal: -0.05896061
       PoseValueList: []
@@ -62177,7 +62177,7 @@ MonoBehaviour:
             valueInternal: -0.11782285
           newKeyListSerialized: 040000000000000000001b4df1bd0000000000000000abaaaa3eabaaaa3e440100000031000000004447b5bd987d243a0745253aabaaaa3eabaaaa3e44010000004600000000213497bda8c8bb3a9dd5a7baabaaaa3eabaaaa3e44010000005a00000000e95631bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9913461
+        valueInternal: 0.49203184
       ReferencePoseValue:
         valueInternal: 0.99697715
       PoseValueList: []
@@ -62215,7 +62215,7 @@ MonoBehaviour:
             valueInternal: 0.9913461
           newKeyListSerialized: 04000000000000000000dcc87d3f0000000000000000abaaaa3eabaaaa3e44010000003100000000a78f7e3f4a328838121a5638abaaaa3eabaaaa3e4401000000460000000093dd7e3fae44f338291c17baabaaaa3eabaaaa3e44010000005a00000000448a373f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 118.58719
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -62686,7 +62686,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.029121922
+        valueInternal: -0.024160646
       ReferencePoseValue:
         valueInternal: -0.027810927
       PoseValueList: []
@@ -62724,7 +62724,7 @@ MonoBehaviour:
             valueInternal: -0.029121922
           newKeyListSerialized: 040000000000000000001991eebc0000000000000000abaaaa3eabaaaa3e4401000000310000000053b5f6bcaf8eb2b76a48afb7abaaaa3eabaaaa3e44010000004600000000c5b2fabc714e47b822f77338abaaaa3eabaaaa3e44010000005a00000000e32226bb0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.030623514
+        valueInternal: -0.029077485
       ReferencePoseValue:
         valueInternal: -0.02466803
       PoseValueList: []
@@ -62762,7 +62762,7 @@ MonoBehaviour:
             valueInternal: -0.030623514
           newKeyListSerialized: 040000000000000000002adefabc0000000000000000abaaaa3eabaaaa3e4401000000310000000065cdffbca67158b7ff6651b7abaaaa3eabaaaa3e44010000004600000000c41701bd261aeeb786f92b38abaaaa3eabaaaa3e44010000005a00000000233540bc0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.05184882
+        valueInternal: -0.654652
       ReferencePoseValue:
         valueInternal: 0.11118816
       PoseValueList: []
@@ -62800,7 +62800,7 @@ MonoBehaviour:
             valueInternal: 0.05184882
           newKeyListSerialized: 040000000000000000006e5f543d0000000000000000abaaaa3eabaaaa3e44010000003100000000a4b1a63d1ae1253a78d9253aabaaaa3eabaaaa3e440100000046000000006de5c43d8394bc3a1b60b3baabaaaa3eabaaaa3e44010000005a00000000e17110bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9977605
+        valueInternal: 0.75498545
       ReferencePoseValue:
         valueInternal: 0.99310386
       PoseValueList: []
@@ -62838,7 +62838,7 @@ MonoBehaviour:
             valueInternal: 0.9977605
           newKeyListSerialized: 040000000000000000003b6d7f3f0000000000000000abaaaa3eabaaaa3e44010000003100000000a7e87e3facba35b8a2fe70b8abaaaa3eabaaaa3e44010000004600000000e1907e3f1f0309b9e77ab7b9abaaaa3eabaaaa3e44010000005a00000000a755533f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 98.77458
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -63932,7 +63932,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.15201275
+        valueInternal: -0.05182425
       ReferencePoseValue:
         valueInternal: -0.14950366
       PoseValueList: []
@@ -63970,7 +63970,7 @@ MonoBehaviour:
             valueInternal: -0.15201275
           newKeyListSerialized: 040000000000000000003ba91bbe0000000000000000abaaaa3eabaaaa3e44010000003100000000715481be5b1886bb8cad983babaaaa3eabaaaa3e440100000046000000009ecb27bde323a93c869844bbabaaaa3eabaaaa3e44010000005a00000000878615be0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.18051681
+        valueInternal: -0.21591544
       ReferencePoseValue:
         valueInternal: -0.24210973
       PoseValueList: []
@@ -64008,7 +64008,7 @@ MonoBehaviour:
             valueInternal: -0.18051681
           newKeyListSerialized: 0400000000000000000066d938be0000000000000000abaaaa3eabaaaa3e44010000003100000000229d0cbec65ce63ae6dab8baabaaaa3eabaaaa3e44010000004600000000a6354ebe6ac9ccbbfa5241bbabaaaa3eabaaaa3e44010000005a000000007cff9bbe0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.032186393
+        valueInternal: 0.00028318877
       ReferencePoseValue:
         valueInternal: 0.042352248
       PoseValueList: []
@@ -64046,7 +64046,7 @@ MonoBehaviour:
             valueInternal: 0.032186393
           newKeyListSerialized: 04000000000000000000e1d5033d0000000000000000abaaaa3eabaaaa3e440100000031000000003cd0a43de2c0003b511dcdb9abaaaa3eabaaaa3e44010000004600000000c76b803d0d3be3baba0d9fbcabaaaa3eabaaaa3e44010000005a00000000c6031ebf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9712211
+        valueInternal: 0.9750358
       ReferencePoseValue:
         valueInternal: 0.95772535
       PoseValueList: []
@@ -64084,7 +64084,7 @@ MonoBehaviour:
             valueInternal: 0.9712211
           newKeyListSerialized: 04000000000000000000f2a1783f0000000000000000abaaaa3eabaaaa3e44010000003100000000fd52743f7c7e33bae171003aabaaaa3eabaaaa3e4401000000460000000081057a3f514b0e3b6dfff8bbabaaaa3eabaaaa3e44010000005a0000000065e5353f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 23.770514
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -64555,7 +64555,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.008895761
+        valueInternal: -0.19001195
       ReferencePoseValue:
         valueInternal: 0.014961074
       PoseValueList: []
@@ -64593,7 +64593,7 @@ MonoBehaviour:
             valueInternal: 0.008895761
           newKeyListSerialized: 0400000000000000000087bf113c0000000000000000abaaaa3eabaaaa3e44010000003100000000faacaf3c21ed8c39e4f58c39abaaaa3eabaaaa3e440100000046000000005106e33c1c4f203aa1da16baabaaaa3eabaaaa3e44010000005a0000000070f97fbe0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.06208099
+        valueInternal: 0.005129929
       ReferencePoseValue:
         valueInternal: 0.004314746
       PoseValueList: []
@@ -64631,7 +64631,7 @@ MonoBehaviour:
             valueInternal: 0.06208099
           newKeyListSerialized: 04000000000000000000a3487e3d0000000000000000abaaaa3eabaaaa3e44010000003100000000f3bb7a3dc6b59bb7ad30a3b7abaaaa3eabaaaa3e4401000000460000000060e0783d079739b8bcaf4837abaaaa3eabaaaa3e44010000005a000000007642883d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.054619577
+        valueInternal: -0.82635283
       ReferencePoseValue:
         valueInternal: 0.00025590166
       PoseValueList: []
@@ -64669,7 +64669,7 @@ MonoBehaviour:
             valueInternal: -0.054619577
           newKeyListSerialized: 04000000000000000000c7b85fbd0000000000000000abaaaa3eabaaaa3e440100000031000000003ac2e3bc0894163a70e3163aabaaaa3eabaaaa3e44010000004600000000c4a76bbc8399ab3a04e99cbaabaaaa3eabaaaa3e44010000005a00000000f09017bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9965358
+        valueInternal: 0.5301045
       ReferencePoseValue:
         valueInternal: 0.99987876
       PoseValueList: []
@@ -64707,7 +64707,7 @@ MonoBehaviour:
             valueInternal: 0.9965358
           newKeyListSerialized: 04000000000000000000f81c7f3f0000000000000000abaaaa3eabaaaa3e44010000003100000000a25c7f3f728cae37ef87e136abaaaa3eabaaaa3e44010000004600000000e7667f3f713e80379eaffeb9abaaaa3eabaaaa3e44010000005a00000000a464433f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 121.25754
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -65178,7 +65178,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.18967149
+        valueInternal: 0.13303463
       ReferencePoseValue:
         valueInternal: 0.18702158
       PoseValueList: []
@@ -65216,7 +65216,7 @@ MonoBehaviour:
             valueInternal: 0.18967149
           newKeyListSerialized: 040000000000000000003e39423e0000000000000000abaaaa3eabaaaa3e4401000000310000000032be493eb4e52439144a2239abaaaa3eabaaaa3e44010000004600000000c06f4d3e9c7fb839d246dbb9abaaaa3eabaaaa3e44010000005a00000000b25eabba0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.22502023
+        valueInternal: -0.15507375
       ReferencePoseValue:
         valueInternal: 0.18118428
       PoseValueList: []
@@ -65254,7 +65254,7 @@ MonoBehaviour:
             valueInternal: 0.22502023
           newKeyListSerialized: 04000000000000000000b46b663e0000000000000000abaaaa3eabaaaa3e44010000003100000000ff9a6b3e5a66e3387902dd38abaaaa3eabaaaa3e44010000004600000000d61e6e3e2c417b393313adb9abaaaa3eabaaaa3e44010000005a0000000052d3953d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.08812588
+        valueInternal: -0.6055609
       ReferencePoseValue:
         valueInternal: -0.022682527
       PoseValueList: []
@@ -65292,7 +65292,7 @@ MonoBehaviour:
             valueInternal: -0.08812588
           newKeyListSerialized: 04000000000000000000577bb4bd0000000000000000abaaaa3eabaaaa3e44010000003100000000093875bd01a41e3aca2a1f3aabaaaa3eabaaaa3e4401000000460000000038423bbdf1f2b43a237aa3baabaaaa3eabaaaa3e44010000005a0000000055dc25bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.951643
+        valueInternal: 0.7691226
       ReferencePoseValue:
         valueInternal: 0.96523607
       PoseValueList: []
@@ -65330,7 +65330,7 @@ MonoBehaviour:
             valueInternal: 0.951643
           newKeyListSerialized: 04000000000000000000e09e733f0000000000000000abaaaa3eabaaaa3e44010000003100000000c77d733fa77435b73dd6cbb7abaaaa3eabaaaa3e44010000004600000000aa58733f52bb67b830e3d0b9abaaaa3eabaaaa3e44010000005a000000000b1a423f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 89.322685
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -66424,7 +66424,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.08833024
+        valueInternal: -0.05825156
       ReferencePoseValue:
         valueInternal: -0.087619714
       PoseValueList: []
@@ -66462,7 +66462,7 @@ MonoBehaviour:
             valueInternal: -0.08833024
           newKeyListSerialized: 040000000000000000007ce6b4bd0000000000000000abaaaa3eabaaaa3e44010000003100000000535c1cbeafe90bbb199d1d3babaaaa3eabaaaa3e44010000004600000000fee068bd1232193c44555db3abaaaa3eabaaaa3e44010000005a000000003ee568bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.08570008
+        valueInternal: -0.09630222
       ReferencePoseValue:
         valueInternal: -0.11015897
       PoseValueList: []
@@ -66500,7 +66500,7 @@ MonoBehaviour:
             valueInternal: -0.08570008
           newKeyListSerialized: 040000000000000000008683afbd0000000000000000abaaaa3eabaaaa3e440100000031000000001baf80bd53d1463a628c25baabaaaa3eabaaaa3e440100000046000000008d39b4bd6ae820bbf36959baabaaaa3eabaaaa3e44010000005a0000000087e81cbe0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.020525869
+        valueInternal: 0.0040940577
       ReferencePoseValue:
         valueInternal: 0.02580096
       PoseValueList: []
@@ -66538,7 +66538,7 @@ MonoBehaviour:
             valueInternal: 0.020525869
           newKeyListSerialized: 04000000000000000000de25a83c0000000000000000abaaaa3eabaaaa3e44010000003100000000e58d5a3d45bc8e3abc51d139abaaaa3eabaaaa3e4401000000460000000079dc8d3dab73cb3a2bf913bcabaaaa3eabaaaa3e44010000005a00000000421d24bf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9921857
+        valueInternal: 0.993638
       ReferencePoseValue:
         valueInternal: 0.9897081
       PoseValueList: []
@@ -66576,7 +66576,7 @@ MonoBehaviour:
             valueInternal: 0.9921857
           newKeyListSerialized: 04000000000000000000e2ff7d3f0000000000000000abaaaa3eabaaaa3e44010000003100000000cc1d7c3fe7d67fb97ecf3e39abaaaa3eabaaaa3e440100000046000000000bf97d3f3e76393a57d149bbabaaaa3eabaaaa3e44010000005a00000000f0f73f3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 15.155708
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -67047,7 +67047,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.004606881
+        valueInternal: -0.08689134
       ReferencePoseValue:
         valueInternal: -0.003511953
       PoseValueList: []
@@ -67085,7 +67085,7 @@ MonoBehaviour:
             valueInternal: -0.004606881
           newKeyListSerialized: 0400000000000000000052f596bb0000000000000000abaaaa3eabaaaa3e4401000000310000000017d97d397ddcd938e404da38abaaaa3eabaaaa3e440100000046000000001ec52e3bc90b78397c7c65b9abaaaa3eabaaaa3e44010000005a00000000c4c3d2bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.005129603
+        valueInternal: 0.010170198
       ReferencePoseValue:
         valueInternal: -0.017546846
       PoseValueList: []
@@ -67123,7 +67123,7 @@ MonoBehaviour:
             valueInternal: 0.005129603
           newKeyListSerialized: 040000000000000000003b16a83b0000000000000000abaaaa3eabaaaa3e440100000031000000002dc69a3b430712b75b4113b7abaaaa3eabaaaa3e44010000004600000000ee10943b4489a7b79d2f8837abaaaa3eabaaaa3e44010000005a000000009e594a3c0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.113956295
+        valueInternal: -0.8755133
       ReferencePoseValue:
         valueInternal: -0.055283826
       PoseValueList: []
@@ -67161,7 +67161,7 @@ MonoBehaviour:
             valueInternal: -0.113956295
           newKeyListSerialized: 04000000000000000000eb61e9bd0000000000000000abaaaa3eabaaaa3e440100000031000000004bcfadbd605d233aa4cd233aabaaaa3eabaaaa3e4401000000460000000066f68fbd005dba3a4a11a7baabaaaa3eabaaaa3e44010000005a00000000d4682fbf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.99346226
+        valueInternal: 0.4752091
       ReferencePoseValue:
         valueInternal: 0.9983103
       PoseValueList: []
@@ -67199,7 +67199,7 @@ MonoBehaviour:
             valueInternal: 0.99346226
           newKeyListSerialized: 040000000000000000008b537e3f0000000000000000abaaaa3eabaaaa3e44010000003100000000d7127f3fa525833860744b38abaaaa3eabaaaa3e44010000004600000000fc5c7f3fc179e738bc4816baabaaaa3eabaaaa3e44010000005a000000001e90383f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 121.21707
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -67670,7 +67670,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.08841536
+        valueInternal: 0.15042494
       ReferencePoseValue:
         valueInternal: 0.08490281
       PoseValueList: []
@@ -67708,7 +67708,7 @@ MonoBehaviour:
             valueInternal: 0.08841536
           newKeyListSerialized: 040000000000000000001d13b53d0000000000000000abaaaa3eabaaaa3e440100000031000000009ac3bb3df4b49238243d9038abaaaa3eabaaaa3e440100000046000000001a0cbf3dffff233947f444b9abaaaa3eabaaaa3e44010000005a0000000021492a3b0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.09088712
+        valueInternal: 0.063566454
       ReferencePoseValue:
         valueInternal: 0.0732225
       PoseValueList: []
@@ -67746,7 +67746,7 @@ MonoBehaviour:
             valueInternal: 0.09088712
           newKeyListSerialized: 040000000000000000000723ba3d0000000000000000abaaaa3eabaaaa3e4401000000310000000025b0bd3d18c41b3839881638abaaaa3eabaaaa3e44010000004600000000bb66bf3dce27ab3827eef9b8abaaaa3eabaaaa3e44010000005a00000000ef1e133d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.059796248
+        valueInternal: -0.6106352
       ReferencePoseValue:
         valueInternal: 0.12015502
       PoseValueList: []
@@ -67784,7 +67784,7 @@ MonoBehaviour:
             valueInternal: 0.059796248
           newKeyListSerialized: 04000000000000000000e9ec743d0000000000000000abaaaa3eabaaaa3e44010000003100000000cb6fb63dad69243a115d243aabaaaa3eabaaaa3e44010000004600000000f35dd43dc1e1ba3a442fb2baabaaaa3eabaaaa3e44010000005a00000000ff7a0dbf0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9901247
+        valueInternal: 0.7748917
       ReferencePoseValue:
         valueInternal: 0.986404
       PoseValueList: []
@@ -67822,7 +67822,7 @@ MonoBehaviour:
             valueInternal: 0.9901247
           newKeyListSerialized: 04000000000000000000d0787d3f0000000000000000abaaaa3eabaaaa3e4401000000310000000050ca7c3ff62f6fb8b91b95b8abaaaa3eabaaaa3e44010000004600000000b45d7c3f5d8929b97a55a6b9abaaaa3eabaaaa3e44010000005a000000003a27553f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 93.89519
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -68916,7 +68916,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.48343995
+        valueInternal: 0.36639783
       ReferencePoseValue:
         valueInternal: 0.38654226
       PoseValueList: []
@@ -68954,7 +68954,7 @@ MonoBehaviour:
             valueInternal: 0.48343995
           newKeyListSerialized: 030000000000000000007185f73e0000000000000000abaaaa3eabaaaa3e44010000003100000000fa7c023fe416993acb7b2fbbabaaaa3eabaaaa3e44010000005a000000003431963e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.322255
+        valueInternal: 0.3740296
       ReferencePoseValue:
         valueInternal: 0.42605942
       PoseValueList: []
@@ -68992,7 +68992,7 @@ MonoBehaviour:
             valueInternal: 0.322255
           newKeyListSerialized: 030000000000000000009bfea43e0000000000000000abaaaa3eabaaaa3e4401000000310000000068fe673e035f8bbbb6d9813babaaaa3eabaaaa3e44010000005a000000005cf90b3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.18646872
+        valueInternal: 0.117067344
       ReferencePoseValue:
         valueInternal: 0.16720498
       PoseValueList: []
@@ -69030,7 +69030,7 @@ MonoBehaviour:
             valueInternal: 0.18646872
           newKeyListSerialized: 03000000000000000000a8f13e3e0000000000000000abaaaa3eabaaaa3e44010000003100000000daec173e34f9ddba83397cb9abaaaa3eabaaaa3e44010000005a000000007205043e0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.7922545
+        valueInternal: 0.8438893
       ReferencePoseValue:
         valueInternal: 0.80068785
       PoseValueList: []
@@ -69068,7 +69068,7 @@ MonoBehaviour:
             valueInternal: 0.7922545
           newKeyListSerialized: 0300000000000000000031d14a3f0000000000000000abaaaa3eabaaaa3e440100000031000000002e0d513f9add8d3ac6b50bbaabaaaa3eabaaaa3e44010000005a00000000c706463f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 28.766079
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -69539,7 +69539,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.22624123
+        valueInternal: -0.39339143
       ReferencePoseValue:
         valueInternal: -0.075788684
       PoseValueList: []
@@ -69577,7 +69577,7 @@ MonoBehaviour:
             valueInternal: -0.22624123
           newKeyListSerialized: 03000000000000000000c8ab67be0000000000000000abaaaa3eabaaaa3e4401000000310000000057983cbecffd9e3a33bcc53aabaaaa3eabaaaa3e44010000005a000000005645cebd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.19889508
+        valueInternal: -0.16639355
       ReferencePoseValue:
         valueInternal: -0.17259085
       PoseValueList: []
@@ -69615,7 +69615,7 @@ MonoBehaviour:
             valueInternal: -0.19889508
           newKeyListSerialized: 0300000000000000000027ab4bbe0000000000000000abaaaa3eabaaaa3e44010000003100000000ce8c9dbef6a44dbb2916e73aabaaaa3eabaaaa3e44010000005a00000000e53957be0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.2803367
+        valueInternal: -0.48934266
       ReferencePoseValue:
         valueInternal: -0.11374832
       PoseValueList: []
@@ -69653,7 +69653,7 @@ MonoBehaviour:
             valueInternal: -0.2803367
           newKeyListSerialized: 030000000000000000004b888fbe0000000000000000abaaaa3eabaaaa3e440100000031000000004aa980bef38d5b3aa15d173babaaaa3eabaaaa3e44010000005a00000000f4f7fcbd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9114097
+        valueInternal: 0.7603295
       ReferencePoseValue:
         valueInternal: 0.9754639
       PoseValueList: []
@@ -69691,7 +69691,7 @@ MonoBehaviour:
             valueInternal: 0.9114097
           newKeyListSerialized: 030000000000000000002552693f0000000000000000abaaaa3eabaaaa3e440100000031000000007426663fb03ebbb931559b3aabaaaa3eabaaaa3e44010000005a0000000002ef763f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 46.596542
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -70162,7 +70162,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.5453234
+        valueInternal: -0.75637317
       ReferencePoseValue:
         valueInternal: -0.35070527
       PoseValueList: []
@@ -70200,7 +70200,7 @@ MonoBehaviour:
             valueInternal: -0.5453234
           newKeyListSerialized: 03000000000000000000509a0bbf0000000000000000abaaaa3eabaaaa3e44010000003100000000585af9be07fce63a0583033babaaaa3eabaaaa3e44010000005a000000008ae0bebe0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.320823
+        valueInternal: -0.21389896
       ReferencePoseValue:
         valueInternal: -0.3440316
       PoseValueList: []
@@ -70238,7 +70238,7 @@ MonoBehaviour:
             valueInternal: -0.320823
           newKeyListSerialized: 03000000000000000000ea42a4be0000000000000000abaaaa3eabaaaa3e440100000031000000007e38c5bea005ffbaabfb2939abaaaa3eabaaaa3e44010000005a000000002f7fc0be0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.08884518
+        valueInternal: -0.1785252
       ReferencePoseValue:
         valueInternal: -0.008659117
       PoseValueList: []
@@ -70276,7 +70276,7 @@ MonoBehaviour:
             valueInternal: -0.08884518
           newKeyListSerialized: 0300000000000000000076f4b5bd0000000000000000abaaaa3eabaaaa3e440100000031000000006c662cbe66801dbb6715273babaaaa3eabaaaa3e44010000005a000000001085bebc0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.7692857
+        valueInternal: 0.5918405
       ReferencePoseValue:
         valueInternal: 0.87096107
       PoseValueList: []
@@ -70314,7 +70314,7 @@ MonoBehaviour:
             valueInternal: 0.7692857
           newKeyListSerialized: 03000000000000000000e8ef443f0000000000000000abaaaa3eabaaaa3e440100000031000000003cfc433f08adebb8b9dcbd3aabaaaa3eabaaaa3e44010000005a000000002c17593f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 46.60046
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
