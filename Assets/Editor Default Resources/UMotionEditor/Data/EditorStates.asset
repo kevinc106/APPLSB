@@ -14,15 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GeneralStates:
     LoadedProjectGUID:
-      valueInternal: c925c1a2d79e02245a0eb2a00079366b
+      valueInternal: a156060024a7bea4abdcce5613db8d01
     RecentlyOpenedProjectGUIDsList:
-    - valueInternal: c925c1a2d79e02245a0eb2a00079366b
-    - valueInternal: ef2d16f9fb5bfd84fb7631ae3aaf3235
-    - valueInternal: 5eb17115decad0c44abdcfa3301d3ad6
-    - valueInternal: 8c28bdd9de354dc4992b57057239e461
-    - valueInternal: 720a892f1ef953b48b4e61df6e53eff8
-    - valueInternal: 68402cd8469b08042afbe67c9148ed15
-    - valueInternal: d1bcfa2f16441d94bbf3b60945d5e760
-    - valueInternal: a943418a14ce0c040a56cca9c3dd247f
-    - valueInternal: d8d023c4de6bc8c439d2e83308ddfd5a
-    - valueInternal: 2c87f6eebfe6be240a02421ab69676ad
+    - valueInternal: a156060024a7bea4abdcce5613db8d01
+    - valueInternal: 30c1a5b7cd414084fa19a3698488d4ff
+    - valueInternal: 41ee3589953ea8c408da63d919d7dd07
+    - valueInternal: dd085b4cc31fd7b4caaf4ca77b7614e8
