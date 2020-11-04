@@ -14,7 +14,8 @@ namespace LSB
         public float animationSpeed;
 
         private static float DEFAULT_SPEED = 1.0f;
-
+        private string OMITTED_CATEGORY = "#99";
+        private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
         public void Start()
         {
             animationDuration = 1.5f;
@@ -58,7 +59,7 @@ namespace LSB
              
             foreach (Expression expression in expressions.tokens)
             {
-                if (!expression.getList().Contains("#99"))
+                if (!expression.getList().Contains(OMITTED_CATEGORY))
                 {
                     mainText.text = expression.word;
                 }
@@ -70,7 +71,7 @@ namespace LSB
                 }
                 foreach(string code in selected.code)
                 {
-                    anim.SetInteger("currentSign", int.Parse(code.Substring(1)));
+                    anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, int.Parse(code.Substring(1)));
                      
                     AnimationClip clip = controller.GetAnimationClip(anim,code.Substring(1));
                     if (clip)
@@ -82,7 +83,7 @@ namespace LSB
                 }
             }
             anim.speed = DEFAULT_SPEED;
-            anim.SetInteger("currentSign", 0);
+            anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
             mainText.text = "";
         }
          

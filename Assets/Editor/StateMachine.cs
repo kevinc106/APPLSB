@@ -10,12 +10,16 @@ using System.Linq;
 // Create a menu item that causes a new controller and statemachine to be created.
 public class StateMachine : MonoBehaviour
 {
-    static string UNITY_RESOURCES_FOLDER = "Assets/Resources/";
-    static string CATEGORY_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, @"DataBase\config\categories.json");
-    static string CONFIG_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, @"DataBase\config\data.json");
-    static Database dataBase;
+    static string UNITY_RESOURCES_FOLDER = Path.Combine("Assets","Resources");
+    static string CATEGORY_PATH = Path.Combine(UNITY_RESOURCES_FOLDER,"DataBase","config","categories.json");
+    static string CONFIG_PATH = Path.Combine(UNITY_RESOURCES_FOLDER,"DataBase","config","data.json");
+    static string NAME_ANIMATOR_CONTROLLER = "main.controller";
+    static string CODE_INDICATOR = "#";
+    static string ANIMATIONS_FOLDER_PATH = @"Animations";
+    static string CODE_SEPARATOR_CLIP = "_";
+    static Database datadase;
     static List<object> expressionCodes = new List<object>();  
-    static AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>("Assets/Default.controller");
+    static AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(Path.Combine("Assets", NAME_ANIMATOR_CONTROLLER));
     
     static List<AnimatorStateTransition> currentTransitions = new List<AnimatorStateTransition>();
 
@@ -24,11 +28,12 @@ public class StateMachine : MonoBehaviour
     {
         try
         {
-            dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
-            expressionCodes = dataBase.Expressions;
+            datadase = new Database(CATEGORY_PATH, CONFIG_PATH);
+            expressionCodes = datadase.Expressions;
             if (controller==null)
             {
-                controller = AnimatorController.CreateAnimatorControllerAtPath("Assets/Default.controller"); 
+                string pathNewController = Path.Combine("Assets", NAME_ANIMATOR_CONTROLLER);
+                controller = AnimatorController.CreateAnimatorControllerAtPath(pathNewController); 
                 // Creates the controller
                 
                 // Add parameters
@@ -42,7 +47,7 @@ public class StateMachine : MonoBehaviour
                 AnimatorState newState = GetNewState(rootStateMachine, "MainIdle");
                 newState.motion = GetMainIdleAnimation(); 
                 Debug.Log("MaindIdle state created"); 
-                AddTransitionToList(newState);
+                AddToCurrentTransitions(newState);
             }
             else
             {
@@ -57,7 +62,7 @@ public class StateMachine : MonoBehaviour
 
     static AnimationClip GetMainIdleAnimation()
     {
-        var animationClips = Resources.LoadAll(@"Animations");  
+        var animationClips = Resources.LoadAll(ANIMATIONS_FOLDER_PATH);  
         foreach (AnimationClip clip in animationClips)
         {
             if (clip.name.Contains("MainIdle"))
@@ -69,7 +74,7 @@ public class StateMachine : MonoBehaviour
     } 
      
     
-    static bool IsAlreadyState(string stateName)
+    static bool ExistState(string stateName)
     {
         try
         {
@@ -94,24 +99,24 @@ public class StateMachine : MonoBehaviour
     static void LoadAllStates()
     { 
         var rootStateMachine = controller.layers[0].stateMachine;
-        dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
-        expressionCodes = dataBase.Expressions;
+        datadase = new Database(CATEGORY_PATH, CONFIG_PATH);
+        expressionCodes = datadase.Expressions;
         foreach (ExpressionData expression in expressionCodes)
         {     
-            if (!IsAlreadyState(expression.Code[0]))
+            if (!ExistState(expression.Code[0]))
             {
                 AnimatorState newState = GetNewState(rootStateMachine, expression.Code[0]); 
-                AddTransitionToList(newState);
+                AddToCurrentTransitions(newState);
             }
             else
             { 
                 Debug.Log("State: " + expression.Code[0] + " has already created");
             } 
         }
-        AddStatesToAnimatorControllerStatesFile();
+        AddStatesInCodesFile();
     }
 
-    private static void AddStatesToAnimatorControllerStatesFile()
+    private static void AddStatesInCodesFile()
     {
         var rootStateMachine = controller.layers[0].stateMachine;
         List<ChildAnimatorState> animatorStates = new List<ChildAnimatorState>(rootStateMachine.states);
@@ -131,7 +136,7 @@ public class StateMachine : MonoBehaviour
         return newState;
     }
 
-    static void AddTransitionToList(AnimatorState destinationState)
+    static void AddToCurrentTransitions(AnimatorState destinationState)
     {  
         currentTransitions.Add(GetAnimatorStateTransition(destinationState)); 
     }
@@ -205,7 +210,7 @@ public class StateMachine : MonoBehaviour
         currentTransitions = new List<AnimatorStateTransition>();
         foreach (var animatorState in animatorStatesList)
         {
-            AddTransitionToList(animatorState.state);
+            AddToCurrentTransitions(animatorState.state);
         } 
     }
  
@@ -213,21 +218,21 @@ public class StateMachine : MonoBehaviour
     [MenuItem("Menu Controller LSB/3. Load All Animations")]
     static void LoadAnimations()
     {
-        dataBase = new Database(CATEGORY_PATH, CONFIG_PATH);
-        expressionCodes = dataBase.Expressions;
-        var animationClips = Resources.LoadAll(@"Animations");
+        datadase = new Database(CATEGORY_PATH, CONFIG_PATH);
+        expressionCodes = datadase.Expressions;
+        var animationClips = Resources.LoadAll(ANIMATIONS_FOLDER_PATH);
             Debug.Log("Clips Founded: " + animationClips.Length);
             var rootStateMachine = controller.layers[0].stateMachine; 
             ChildAnimatorState[] animatorStatesList = rootStateMachine.states;
             foreach (AnimationClip clip in animationClips)
             {
-                if (clip.name.Contains("_"))
+                if (clip.name.Contains(CODE_SEPARATOR_CLIP))
                 {
                     String clipCode = clip.name.Substring(clip.name.Length - 5);
                     //if exist code clip in data base
                     bool firstFlag = false; bool secondFlag = false; 
                     foreach (ExpressionData expression in expressionCodes) {
-                        if (expression.Code[0].Contains("#" + clipCode))
+                        if (expression.Code[0].Contains(CODE_INDICATOR + clipCode))
                         {
                             firstFlag = true;
                             foreach (var animatorState in animatorStatesList)

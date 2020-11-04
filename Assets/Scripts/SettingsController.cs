@@ -54,18 +54,22 @@ namespace LSB
 
         private void Update()
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            goBack(); 
+        }
+
+        private void goBack()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (panel.activeSelf)
                 {
-                    closePanel(); 
+                    closePanel();
                 }
                 else
                 {
                     Application.Quit();
                 }
             }
-            
         }
     }
 }
