@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -8,24 +8,74 @@ using UnityEngine;
 namespace LSB
 {
     public class LocalParser
-    {
+    { 
+
+        private static List<string> GetAnimationListCodes()
+        {
+            List<string> AnimationListCodes = new List<string>();
+            TextAsset codes = (TextAsset)Resources.Load("Codes");
+            char[] delimiters = new char[] { '\r', '\n' };
+            foreach (string s in codes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries))
+            {
+                AnimationListCodes.Add(s);
+            }
+            return AnimationListCodes;
+        } 
+
         public static ExpressionList ParseExpressionList(string input)
         {
+            List<string> animationListCodes = GetAnimationListCodes();
             ExpressionList output = new ExpressionList();
             output.tokens = new List<Expression>();
-            List<string> list = input.Split(' ').ToList();
+            List<string> list = SplitInput(RemoveDiacritics(input.ToLower()), animationListCodes);
             foreach (string word in list)
-            {
+            { 
                 Expression expression = new Expression();
                 expression.word = RemoveDiacritics(word.ToLower());
                 expression.code = new List<string>();
-                foreach (char letter in expression.word)
-                {
-                    expression.code.Add(getAnimationCode(letter));
+                foreach (string animation in animationListCodes)
+                { 
+                    char[] delimiters = new char[] { '#' };
+                    string wordToMatch = RemoveDiacritics(animation.Split(delimiters)[0].ToLower());
+                     
+                    if (expression.word==wordToMatch)
+                    {
+                        string code = "#"+animation.Split(delimiters)[1]; 
+                        expression.code.Add(code);
+                        break;
+                    }
                 }
                 output.tokens.Add(expression);
             }
             return output;
+        }  
+
+        private static List<string> SplitInput(string input, List<string> animationListCodes)
+        {
+            List<string> list = new List<string>(); 
+            if (!IsPhrase(input, animationListCodes))
+            { 
+                return input.Split(' ').ToList();
+            }
+            else
+            {
+                list.Add(input);
+            }
+            return list;
+        }
+
+        private static bool IsPhrase(string input, List<string> animationListCodes)
+        {
+            List<string> phrases = new List<string>(); 
+            foreach (string word in animationListCodes)
+            {
+                if(word.Contains(' '))
+                {
+                    char[] delimiters = new char[] { '#' };
+                    phrases.Add(RemoveDiacritics(word.Split(delimiters)[0].ToLower())); 
+                }
+            }
+            return phrases.Contains(input);
         }
 
         public static Expression ParseExpression(string input)
@@ -37,13 +87,13 @@ namespace LSB
             {
                 if(letter != ' ')
                 {
-                    expression.code.Add(getAnimationCode(letter));
+                    expression.code.Add(getLetterAnimationCode(letter));
                 }
             }
             return expression;
         }
 
-        private static string getAnimationCode(char letter)
+        private static string getLetterAnimationCode(char letter)
         {
             switch (letter)
             {

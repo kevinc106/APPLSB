@@ -8,21 +8,28 @@ namespace LSB
 {
     public class AnimatorControllerStates : MonoBehaviour
     {
-        private List<string> animationList = new List<string>();
+        private List<string> AnimationList = new List<string>();
         void Start()
         { 
             TextAsset codes = (TextAsset) Resources.Load("Codes");
             
             char[] delimiters = new char[] { '\r', '\n' };
             foreach(string s in codes.text.Split(delimiters,StringSplitOptions.RemoveEmptyEntries))
-            {
-                animationList.Add(s);
-            }  
+            {               
+                AnimationList.Add(s);
+            }
         }
 
         public bool HasStateName(string stateName)
-        {
-            return animationList.Contains(stateName);
+        { 
+            foreach(string stateSelected in AnimationList)
+            {
+                if (stateSelected.Contains(stateName))
+                {
+                    return true;
+                }
+            }
+            return false;  
         }
 
         public bool HasAllStateNames(List<string> stateNames)
@@ -39,8 +46,15 @@ namespace LSB
 
         public bool StateHasAnimationClip(Animator animator, Expression expression)
         {
-            string expressionCode = expression.getList().Substring(1);
-            return HasAllStateNames(expression.code) && ExistAnimationOfExpression(animator, expressionCode);
+            try
+            { 
+                string expressionCode = expression.getList().Substring(1);
+                return HasAllStateNames(expression.code) && ExistAnimationOfExpression(animator, expressionCode);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         private bool ExistAnimationOfExpression(Animator animator, string expressionCode)
@@ -63,6 +77,11 @@ namespace LSB
                 }
             }
             return null;
+        }
+
+        public List<string> GetAnimationList()
+        {
+            return AnimationList;
         }
     }
 }

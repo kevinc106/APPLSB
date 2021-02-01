@@ -20,6 +20,11 @@ namespace LSB
 
         private void Start()
         {
+            RequestUserMicrophonePermission();
+        }
+
+        private static void RequestUserMicrophonePermission()
+        {
             if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
             {
                 Permission.RequestUserPermission(Permission.Microphone);
@@ -35,14 +40,20 @@ namespace LSB
 
         public void OnStartRecognizer()
         {
+            
             if (speechRecognizerControl != null)
-            {
+            {  
                 if (speechRecognizerControl.IsSupportedRecognizer && speechRecognizerControl.IsPermissionGranted)
                 {
                     if (recongizerButton != null)
                     {
                         recongizerButton.interactable = false;
                     }
+                }
+                else
+                {
+                    Toast.Instance.Show("Debe otorgar permisos a la aplicación para usar esta opción", 2.5f);
+                    RequestUserMicrophonePermission(); 
                 }
             }
         }

@@ -17,6 +17,7 @@ public class StateMachine : MonoBehaviour
     static string CODE_INDICATOR = "#";
     static string ANIMATIONS_FOLDER_PATH = @"Animations";
     static string CODE_SEPARATOR_CLIP = "_";
+    static string NAME_CODES_FILE = "Codes.txt";
     static Database datadase;
     static List<object> expressionCodes = new List<object>();  
     static AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(Path.Combine("Assets", NAME_ANIMATOR_CONTROLLER));
@@ -32,13 +33,17 @@ public class StateMachine : MonoBehaviour
             expressionCodes = datadase.Expressions;
             if (controller==null)
             {
-                string pathNewController = Path.Combine("Assets", NAME_ANIMATOR_CONTROLLER);
-                controller = AnimatorController.CreateAnimatorControllerAtPath(pathNewController); 
                 // Creates the controller
-                
+                string pathNewController = Path.Combine("Assets", NAME_ANIMATOR_CONTROLLER);
+                controller = AnimatorController.CreateAnimatorControllerAtPath(pathNewController);
+
                 // Add parameters
+                AnimatorControllerParameter animationSpeedParameter = new AnimatorControllerParameter();
+                animationSpeedParameter.name = "animationSpeed";
+                animationSpeedParameter.type = AnimatorControllerParameterType.Float;
+                animationSpeedParameter.defaultFloat = 1.0f;
                 controller.AddParameter("currentSign", AnimatorControllerParameterType.Int);
-                controller.AddParameter("animationSpeed", AnimatorControllerParameterType.Float);
+                controller.AddParameter(animationSpeedParameter);
                 var rootStateMachine = controller.layers[0].stateMachine;
                 controller.layers[0].stateMachine.name = "Base Layer"; 
 
@@ -113,19 +118,25 @@ public class StateMachine : MonoBehaviour
                 Debug.Log("State: " + expression.Code[0] + " has already created");
             } 
         }
-        AddStatesInCodesFile();
+        AddStatesInCodesFile(expressionCodes);
     }
 
-    private static void AddStatesInCodesFile()
+    private static void AddStatesInCodesFile(List<object> expressions)
     {
-        var rootStateMachine = controller.layers[0].stateMachine;
+        /*var rootStateMachine = controller.layers[0].stateMachine;
         List<ChildAnimatorState> animatorStates = new List<ChildAnimatorState>(rootStateMachine.states);
         List<string> stateCodes = new List<string>();
         foreach (var animatorState in animatorStates)
         {
             stateCodes.Add(animatorState.state.name);
-        } 
-        File.WriteAllLines("Assets/Resources/Codes.txt", stateCodes,System.Text.Encoding.UTF8); 
+        } */
+        List<string> stateCodes = new List<string>();
+        stateCodes.Add("MainIdle");
+        foreach (ExpressionData expression in expressions)
+        {
+            stateCodes.Add(expression.Expression+expression.Code[0]);
+        }
+        File.WriteAllLines(Path.Combine("Assets", "Resources",NAME_CODES_FILE), stateCodes,System.Text.Encoding.UTF8); 
     }
 
     private static AnimatorState GetNewState(AnimatorStateMachine rootStateMachine, string code)

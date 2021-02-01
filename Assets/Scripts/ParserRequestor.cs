@@ -10,8 +10,7 @@ namespace LSB
 {
     public class ParserRequestor : MonoBehaviour
     {
-        private static readonly string API_URL = "https://lsbapi.herokuapp.com";
-	//private static readonly string API_URL = "http://localhost:3000";
+        private static readonly string API_URL = "https://lsbapi.herokuapp.com"; 
         [Serializable] public class ResultHandler : UnityEvent<UnityWebRequest, string> { }
         public ResultHandler OnResult;
 
@@ -19,6 +18,7 @@ namespace LSB
 
         public Text mainText;
 
+        public GameObject connectionStatusImage;
         private void Start()
         {
             //OnRequest("venir");
@@ -33,21 +33,35 @@ namespace LSB
 
         private IEnumerator Request(string word)
         {
+            setConnectionStatusImage(); 
             mainText.color = Color.red;
             mainText.text = "Cargando...";
             UnityWebRequest request = new UnityWebRequest(API_URL, "POST");
             request.timeout = 10;
             byte[] bodyRaw = Encoding.UTF8.GetBytes(JsonUtility.ToJson(createRequest(word)));
-             
+
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-              
+
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
             yield return request.SendWebRequest();
             if (OnResult != null)
             {
+                mainText.text = "";
                 mainText.color = Color.black;
                 OnResult.Invoke(request, word);
+            }
+        }
+
+        private void setConnectionStatusImage()
+        {
+            if (hasConnectionProblems())
+            {
+                connectionStatusImage.SetActive(true);
+            }
+            else
+            {
+                connectionStatusImage.SetActive(false);
             }
         }
 
@@ -56,6 +70,11 @@ namespace LSB
             LSBRequest request = new LSBRequest();
             request.word = word;
             return request;
+        }
+
+        private bool hasConnectionProblems()
+        {
+            return Application.internetReachability == NetworkReachability.NotReachable;
         }
     }
 }

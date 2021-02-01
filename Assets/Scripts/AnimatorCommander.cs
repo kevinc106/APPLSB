@@ -18,25 +18,25 @@ namespace LSB
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
         public void Start()
         {
-            animationDuration = 1.5f;
+            //animationDuration = 1.5f;
             animationSpeed = 1.0f;
         } 
 
         public void SetSlowSpeed()
         {
-            animationDuration = 1.5f;
+            //animationDuration = 1.5f;
             animationSpeed = 1.0f;
         }
 
         public void SetMediumSpeed()
         {
-            animationDuration = 1.0f;
+            //animationDuration = 1.0f;
             animationSpeed = 1.5f;
         }
 
         public void SetFastSpeed()
         {
-            animationDuration = 0.5f;
+            //animationDuration = 0.5f;
             animationSpeed = 3.0f;
         }
 
@@ -47,7 +47,6 @@ namespace LSB
 
         public void OnError(string word)
         {
-             
             ExpressionList expressions = LocalParser.ParseExpressionList(word);
             Debug.Log(expressions.tokens.Count);
             StartCoroutine(scene(expressions));

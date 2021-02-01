@@ -7,13 +7,12 @@ namespace LSB
     public class SettingsController : MonoBehaviour
     {
         public GameObject panel;
-        public AnimatorCommander commander;
-
+        public AnimatorCommander commander; 
         public void openPanel()
         {
             if (panel != null)
             {
-                panel.SetActive(true);
+                panel.SetActive(true); 
             }
         }
 
@@ -70,6 +69,6 @@ namespace LSB
                     Application.Quit();
                 }
             }
-        }
+        } 
     }
 }
